@@ -1,0 +1,43 @@
+@mixin mode-image-style($position, $url, $color) {
+  background-color: $color;
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: $position 50% !important;
+}
+
+.switch_mode_row {
+  .switch_mode_switch {
+    .switch_mode_switch_container {
+      width: 40px;
+      @include mode-image-style(
+        90%,
+        "https://img.icons8.com/emoji/crescent-moon-emoji.png",
+        black
+      );
+      border-radius: 26px;
+      padding: 4px;
+      transition: background-color 0.5s ease-in-out;
+      .switch_mode_switch_button {
+        cursor: pointer;
+        width: 19px;
+        height: 19px;
+        background-color: white;
+        border-radius: 50%;
+        transform: translateX(0%);
+        transition: transform 0.5s ease-in-out;
+      }
+      .switch_mode_switch_button.active {
+        transform: translateX(110%);
+        background-color: black;
+      }
+    }
+    .switch_mode_switch_container.active {
+      @include mode-image-style(
+        10%,
+        "https://img.icons8.com/color/sun.png",
+        white
+      );
+    }
+  }
+}

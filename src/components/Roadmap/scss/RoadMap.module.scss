@@ -1,0 +1,41 @@
+.roandmap {
+  .roandmap_title {
+    margin-bottom: 0px;
+  }
+  .roandmap_list {
+    list-style-type: "📂";
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 15px;
+      border-right: 1px dashed gray;
+    }
+    .roandmap_list_item {
+      padding: 5px;
+      margin-left: 50px;
+      position: relative;
+      z-index: 1;
+      text-wrap: nowrap;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 50%;
+        bottom: 5px;
+        left: -25px;
+        transform: rotate(270deg);
+        border-right: 1px dashed gray;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .roandmap_title {
+    font-size: 1rem;
+  }
+}

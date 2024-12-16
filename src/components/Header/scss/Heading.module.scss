@@ -1,0 +1,32 @@
+.header_container {
+
+  .header_switch_mode {
+    display: none;
+
+    .header_switch_mode_row {
+      max-width: 1280px;
+      margin: auto;
+      height: 40px;
+      background-color: #0f7d59;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 10px;
+      p {
+        font-weight: bold;
+        color: white;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 890px) {
+  .header_container {
+    transform: translateY(0) !important;
+    bottom: -1px;
+    .header_switch_mode {
+      display: block;
+    }
+  }
+}

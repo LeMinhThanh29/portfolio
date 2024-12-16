@@ -1,0 +1,133 @@
+.project_item_container {
+  width: 100%;
+  height: fit-content;
+  font-size: 0.9rem;
+
+  &.completed {
+    background: linear-gradient(
+      to bottom,
+      #1d976c,
+      white
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  &.in_progress {
+    background: linear-gradient(
+      to bottom,
+      #fa7117,
+      white
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  &.paused {
+    background: linear-gradient(
+      to bottom,
+      #ed213a,
+      white
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  position: relative;
+  padding: 0px 5px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  h3 {
+    color: white;
+    margin: 0px;
+    padding: 3px 0px;
+    text-align: center;
+  }
+  .project_item_row {
+    background-color: white;
+    border-radius: 15px;
+    padding: 3px;
+    box-sizing: border-box;
+    height: 100%;
+    margin-bottom: 10px;
+
+    .project_item_body {
+      border: 2px dashed #d7d7d7;
+      border-radius: 15px;
+      padding: 5px;
+      .project_item_title {
+        .project_item_body_content {
+          h1 {
+            margin: 0px;
+            padding-bottom: 5px;
+            a {
+              color: #0575e6;
+            }
+          }
+          p {
+            width: 90%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+      .project_item_body_description {
+        margin-top: 5px;
+        h4 {
+          margin: 0px;
+        }
+        p {
+          color: #797979;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 5; /* Giới hạn hiển thị chỉ 5 dòng */
+          overflow: hidden; /* Ẩn phần còn lại nếu vượt quá 5 dòng */
+          text-overflow: ellipsis; /* Hiển thị dấu "..." nếu văn bản bị cắt */
+        }
+      }
+      .project_item_body_technology {
+        margin-top: 5px;
+        h4 {
+          margin: 0px;
+        }
+        ul {
+          margin-top: 5px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          text-wrap: nowrap;
+          width: 100%;
+          overflow: hidden;
+          li {
+            text-align: center;
+            padding: 4px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .project_item_footer {
+      padding: 5px;
+
+      .project_item_info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        div {
+          display: flex;
+          align-items: center;
+          gap: 2px;
+
+          p {
+            font-size: 1rem;
+            color: black;
+          }
+        }
+
+        img {
+          width: 100%;
+          max-width: 13px;
+        }
+      }
+      .project_item_date {
+      }
+    }
+  }
+}
