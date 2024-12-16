@@ -1,46 +1,182 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Giới thiệu
 
-## Available Scripts
+Xin chào, tôi là **Le Minh Thanh**, một **lập trình viên Full Stack** từ **Ho Chi Minh City, Vietnam**. Tôi chuyên về **phát triển web** với các công nghệ như **Java Spring Boot** cho backend và **ReactJS** và **VueJS** cho frontend. Portfolio này sẽ giới thiệu một số dự án tôi đã tham gia, các kỹ năng tôi sở hữu, và các công nghệ tôi đã sử dụng.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Các Dự Án Nổi Bật
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 1. **CoreImport System**
+   - **Mô tả**: Hệ thống tích hợp dữ liệu cho **Mobifone Region 9**, hỗ trợ nhập và quản lý dữ liệu người dùng và phần thưởng, với khả năng tùy chỉnh các trường dữ liệu và xuất ra file Excel.
+   - **Vai trò**: **Intern Frontend Developer**.
+   - **Công nghệ**: React, Vue.js, JavaScript, HTML, CSS, Git.
+   - **Link GitHub**: [CoreImport System](https://github.com/LeMinhThanh29/CoreImport)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 2. **VieclamZalo**
+   - **Mô tả**: Nền tảng giúp người dùng tham gia các nhiệm vụ kiếm tiền qua Zalo. Công việc của tôi bao gồm thiết kế giao diện, phát triển frontend và tích hợp API.
+   - **Vai trò**: **Frontend Developer**.
+   - **Công nghệ**: Vue.js, HTML, CSS, JavaScript, Git.
+   - **Link GitHub**: [VieclamZalo](https://github.com/webstudio/ecommerce-platform)
 
-### `npm test`
+### 3. **Honto Application**
+   - **Mô tả**: Ứng dụng thương mại điện tử bán sách và nội dung số. Công việc của tôi bao gồm phát triển API sử dụng **Java** và **Spring Boot**, tích hợp với CMS và kiểm thử ứng dụng.
+   - **Vai trò**: **Backend Developer**.
+   - **Công nghệ**: Java, Spring Boot, SQL, Oracle, Doma, Git.
+   - **Link GitHub**: [Honto.jp](https://honto.jp/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Kỹ Năng và Công Nghệ
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: ReactJS, VueJS, HTML, CSS, JavaScript.
+- **Backend**: Java, Spring Boot, SQL, Oracle.
+- **Version Control**: Git, GitHub.
+- **Other Tools**: Docker, Postman, Figma, GitLab, JIRA.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Hướng Dẫn Cài Đặt
 
-### `npm run eject`
+Để chạy các dự án trong portfolio này trên máy tính của bạn, làm theo các bước sau:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. **Clone Repository**:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/LeMinhThanh29/portfolio.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. **Cài Đặt Các Gói Phụ Thuộc**:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Di chuyển vào thư mục dự án:
 
-## Learn More
+```bash
+cd portfolio
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Cài đặt các gói cần thiết:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install
+```
+
+3. **Chạy Ứng Dụng**:
+
+- Để chạy ứng dụng trên localhost:
+
+```bash
+npm start
+```
+
+---
+
+## Đóng Góp
+
+Nếu bạn muốn đóng góp cho dự án, làm theo các bước sau:
+
+1. Fork dự án này.
+2. Tạo nhánh mới cho tính năng của bạn (`git checkout -b feature-new-feature`).
+3. Commit các thay đổi của bạn (`git commit -am 'Add new feature'`).
+4. Push nhánh lên GitHub (`git push origin feature-new-feature`).
+5. Tạo pull request.
+
+---
+
+## Liên Hệ
+
+Nếu bạn muốn liên hệ hoặc có bất kỳ câu hỏi nào về các dự án, vui lòng liên hệ với tôi qua:
+
+- **Email**: [leminhthanhneo77@gmail.com](mailto:leminhthanhneo77@gmail.com)
+- **LinkedIn**: [linkedin.com/in/leminhthanhneo77](https://www.linkedin.com/in/leminhthanhneo77)
+- **GitHub**: [LeMinhThanh29](https://github.com/LeMinhThanh29)
+
+---
+
+## Cấu trúc dự án
+
+Dưới đây là cấu trúc thư mục của các dự án trong portfolio:
+
+```
+portfolio/
+│
+├── public/                  # Các file công khai như index.html, favicon.ico, logo, v.v.
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+│
+├── src/                     # Thư mục chứa mã nguồn chính của ứng dụng
+│   ├── assets/              # Các tài nguyên như hình ảnh và biểu tượng
+│   │   ├── icons/           # Biểu tượng ứng dụng
+│   │   │   ├── home-icon.svg
+│   │   │   ├── job-icon.svg
+│   │   │   ├── logo.svg
+│   │   │   └── message-icon.svg
+│   │   └── img/             # Hình ảnh liên quan đến giao diện
+│   │       ├── CSS3_Logo-700x794.png
+│   │       ├── JavaScript_Logo-700x700.png
+│   │       ├── React_logo_logotype_emblem.png
+│   │       ├── Vue.js_Logo-700x606.png
+│   │       └── spring-3-logo-png-transparent.png
+│   ├── components/          # Các component React của ứng dụng
+│   │   ├── Contact/         # Component liên hệ
+│   │   │   ├── Contact.tsx
+│   │   │   └── scss/        # SCSS cho component
+│   │   ├── Feature/         # Component tính năng
+│   │   │   ├── Feature.tsx
+│   │   │   └── scss/
+│   │   ├── Footer/          # Component footer
+│   │   │   ├── Footer.tsx
+│   │   │   └── scss/
+│   │   ├── Header/          # Component header
+│   │   │   ├── Heading.tsx
+│   │   │   └── scss/
+│   │   ├── Job/             # Component quản lý công việc
+│   │   │   ├── Job.tsx
+│   │   │   ├── JobItem.tsx
+│   │   │   └── JobList.tsx
+│   │   ├── Navigation/      # Component điều hướng
+│   │   │   ├── Nav.tsx
+│   │   │   └── scss/
+│   │   ├── Project/         # Component quản lý dự án
+│   │   │   ├── Project.tsx
+│   │   │   ├── ProjectItem.tsx
+│   │   │   └── ProjectList.tsx
+│   │   ├── Roadmap/         # Component lộ trình
+│   │   │   ├── RoadMap.tsx
+│   │   │   └── scss/
+│   │   ├── Skills/          # Component kỹ năng
+│   │   │   ├── Skills.tsx
+│   │   │   └── scss/
+│   │   └── Switch/          # Component chuyển đổi
+│   │       ├── Switch.tsx
+│   │       └── scss/
+│   ├── context/             # Các context sử dụng trong ứng dụng
+│   │   └── Context.tsx
+│   ├── model/               # Các mô hình dữ liệu
+│   │   ├── ContextModel.ts
+│   │   ├── ImageExport.ts
+│   │   ├── InputModel.ts
+│   │   ├── JobItemModel.ts
+│   │   ├── ProjectModel.ts
+│   │   ├── SkillsModel.ts
+│   │   └── ...
+│   ├── router/              # Các router cho ứng dụng
+│   │   └── DynamicRouter.tsx
+│   ├── utils/               # Các hàm tiện ích
+│   │   └── DateFormatter.ts
+│   ├── App.tsx              # Entry point của ứng dụng
+│   ├── index.tsx            # File entry point chính
+│   ├── index.css            # CSS chung cho ứng dụng
+│   └── reportWebVitals.ts   # Báo cáo hiệu suất ứng dụng
+│
+├── package.json             # Cấu hình gói và phụ thuộc
+├── tsconfig.json            # Cấu hình TypeScript
+├── package-lock.json        # Phiên bản các phụ thuộc
+└── README.md                # Tệp README
+
+```
+
