@@ -1,8 +1,9 @@
 import classNames from "classnames/bind";
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import styles from "./scss/Contact.module.scss";
 import Title from "../Title/Title";
 import { SubmitHandler, useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 const cx = classNames.bind(styles);
 interface ContactFormInputs {
   name: string;
@@ -11,22 +12,38 @@ interface ContactFormInputs {
   message: string;
 }
 function Contact() {
+  const SERVICE_ID = "service_ga62hkc";
+  const TEMPLATE_ID = "template_qumre8t";
+  const PUBLIC_KEY = "CVVfoRdQhFgFv0lVu";
+  const form = useRef<HTMLFormElement>(null);
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<ContactFormInputs>();
 
-  const onSubmit: SubmitHandler<ContactFormInputs> = (data) => {
-    console.log("Form Data:", data);
-    // Here you can send the data to your backend/API
+  const onSubmit: SubmitHandler<ContactFormInputs> = () => {
+    if (form.current) {
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+        () => {
+          console.log("SUCCESS!");
+          alert("Your message has been sent!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          alert("Failed to send message. Please try again later.");
+        }
+      );
+    }
   };
+
   return (
     <section className={cx("contact_container")} id="contact">
       <div className={cx("contact_row")}>
         <Title text="Contact Me" />
         <div className={cx("contact_body")}>
-        <form
+          <form
+            ref={form}
             onSubmit={handleSubmit(onSubmit)}
             className={cx("header_container")}
           >
@@ -39,6 +56,7 @@ function Contact() {
                   required: "Name is required",
                   maxLength: 50,
                 })}
+                name="name"
               />
               {errors.name && (
                 <p className={cx("error_message")}>{errors.name.message}</p>
@@ -57,6 +75,7 @@ function Contact() {
                     message: "Invalid email address",
                   },
                 })}
+                name="email"
               />
               {errors.email && (
                 <p className={cx("error_message")}>{errors.email.message}</p>
@@ -72,6 +91,7 @@ function Contact() {
                   required: "Subject is required",
                   maxLength: 100,
                 })}
+                name="subject"
               />
               {errors.subject && (
                 <p className={cx("error_message")}>{errors.subject.message}</p>
@@ -87,6 +107,7 @@ function Contact() {
                   required: "Message is required",
                   minLength: 10,
                 })}
+                name="message"
               />
               {errors.message && (
                 <p className={cx("error_message")}>{errors.message.message}</p>
