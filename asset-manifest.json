@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.e7ee4321.css",
+    "main.js": "/react-gh-pages/static/js/main.27989a22.js",
+    "static/js/453.1407b060.chunk.js": "/react-gh-pages/static/js/453.1407b060.chunk.js",
+    "static/media/HTML5_badge.png": "/react-gh-pages/static/media/HTML5_badge.dbc3baa7e405494219e6.png",
+    "static/media/React_logo_logotype_emblem.png": "/react-gh-pages/static/media/React_logo_logotype_emblem.fb59dfc6bb1bac6b0ad0.png",
+    "static/media/slider-2-2x.png": "/react-gh-pages/static/media/slider-2-2x.1cd56b6460e10583845d.png",
+    "static/media/spring-3-logo-png-transparent.png": "/react-gh-pages/static/media/spring-3-logo-png-transparent.1a753d3a09a8df3cec6c.png",
+    "static/media/python-logo.png": "/react-gh-pages/static/media/python-logo.52d7bb207f9868b90e39.png",
+    "static/media/redux-logo.png": "/react-gh-pages/static/media/redux-logo.fe04b64339963c72ea05.png",
+    "static/media/java.png": "/react-gh-pages/static/media/java.4d2cfa80ef1d7d3131ae.png",
+    "static/media/git-icon-logo-png-transparent.png": "/react-gh-pages/static/media/git-icon-logo-png-transparent.0983b7b8f96629e083f1.png",
+    "static/media/JavaScript_Logo-700x700.png": "/react-gh-pages/static/media/JavaScript_Logo-700x700.ff79a740e259711961ba.png",
+    "static/media/django-logo.png": "/react-gh-pages/static/media/django-logo.a5aaa412df3c52f5f6bf.png",
+    "static/media/CSS3_Logo-700x794.png": "/react-gh-pages/static/media/CSS3_Logo-700x794.a74b9e275492f9574245.png",
+    "static/media/Vue.js_Logo-700x606.png": "/react-gh-pages/static/media/Vue.js_Logo-700x606.24386471872c57005977.png",
+    "static/media/sql.png": "/react-gh-pages/static/media/sql.2b741115447cb905d6eb.png",
+    "static/media/Figma-Logo-PNG-Isolated-HD.png": "/react-gh-pages/static/media/Figma-Logo-PNG-Isolated-HD.21eb509cad3d4d946da9.png",
+    "index.html": "/react-gh-pages/index.html",
+    "static/media/message-icon.svg": "/react-gh-pages/static/media/message-icon.02177015608c6c70129854a889c92137.svg",
+    "static/media/skills-icon.svg": "/react-gh-pages/static/media/skills-icon.4648ab10ec49d3c49c91c53332e7517a.svg",
+    "static/media/job-icon.svg": "/react-gh-pages/static/media/job-icon.d4cf8cb370c78ed21f7069d803e1c943.svg",
+    "static/media/project-icon.svg": "/react-gh-pages/static/media/project-icon.e383dbf1102767255ebb8fb7b66ee6cf.svg",
+    "static/media/home-icon.svg": "/react-gh-pages/static/media/home-icon.d63499bca243a071a55854e0277f2efc.svg",
+    "main.e7ee4321.css.map": "/react-gh-pages/static/css/main.e7ee4321.css.map",
+    "main.27989a22.js.map": "/react-gh-pages/static/js/main.27989a22.js.map",
+    "453.1407b060.chunk.js.map": "/react-gh-pages/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7ee4321.css",
+    "static/js/main.27989a22.js"
+  ]
+}
