@@ -100,15 +100,83 @@ Dưới đây là cấu trúc thư mục của các dự án trong portfolio:
 ```
 portfolio/
 │
-├── src/
-│   ├── components/          # Các component React hoặc Vue
-│   ├── styles/              # Các file SCSS hoặc CSS
-│   ├── assets/              # Ảnh, biểu tượng, v.v.
-│   └── App.js               # Entry point của ứng dụng
+├── public/                  # Các file công khai như index.html, favicon.ico, logo, v.v.
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
 │
-├── public/                  # Các file công khai như index.html
-├── .gitignore               # Các file không muốn theo dõi trong Git
-├── README.md                # Tệp README
-└── package.json             # Các gói phụ thuộc và cấu hình ứng dụng
+├── src/                     # Thư mục chứa mã nguồn chính của ứng dụng
+│   ├── assets/              # Các tài nguyên như hình ảnh và biểu tượng
+│   │   ├── icons/           # Biểu tượng ứng dụng
+│   │   │   ├── home-icon.svg
+│   │   │   ├── job-icon.svg
+│   │   │   ├── logo.svg
+│   │   │   └── message-icon.svg
+│   │   └── img/             # Hình ảnh liên quan đến giao diện
+│   │       ├── CSS3_Logo-700x794.png
+│   │       ├── JavaScript_Logo-700x700.png
+│   │       ├── React_logo_logotype_emblem.png
+│   │       ├── Vue.js_Logo-700x606.png
+│   │       └── spring-3-logo-png-transparent.png
+│   ├── components/          # Các component React của ứng dụng
+│   │   ├── Contact/         # Component liên hệ
+│   │   │   ├── Contact.tsx
+│   │   │   └── scss/        # SCSS cho component
+│   │   ├── Feature/         # Component tính năng
+│   │   │   ├── Feature.tsx
+│   │   │   └── scss/
+│   │   ├── Footer/          # Component footer
+│   │   │   ├── Footer.tsx
+│   │   │   └── scss/
+│   │   ├── Header/          # Component header
+│   │   │   ├── Heading.tsx
+│   │   │   └── scss/
+│   │   ├── Job/             # Component quản lý công việc
+│   │   │   ├── Job.tsx
+│   │   │   ├── JobItem.tsx
+│   │   │   └── JobList.tsx
+│   │   ├── Navigation/      # Component điều hướng
+│   │   │   ├── Nav.tsx
+│   │   │   └── scss/
+│   │   ├── Project/         # Component quản lý dự án
+│   │   │   ├── Project.tsx
+│   │   │   ├── ProjectItem.tsx
+│   │   │   └── ProjectList.tsx
+│   │   ├── Roadmap/         # Component lộ trình
+│   │   │   ├── RoadMap.tsx
+│   │   │   └── scss/
+│   │   ├── Skills/          # Component kỹ năng
+│   │   │   ├── Skills.tsx
+│   │   │   └── scss/
+│   │   └── Switch/          # Component chuyển đổi
+│   │       ├── Switch.tsx
+│   │       └── scss/
+│   ├── context/             # Các context sử dụng trong ứng dụng
+│   │   └── Context.tsx
+│   ├── model/               # Các mô hình dữ liệu
+│   │   ├── ContextModel.ts
+│   │   ├── ImageExport.ts
+│   │   ├── InputModel.ts
+│   │   ├── JobItemModel.ts
+│   │   ├── ProjectModel.ts
+│   │   ├── SkillsModel.ts
+│   │   └── ...
+│   ├── router/              # Các router cho ứng dụng
+│   │   └── DynamicRouter.tsx
+│   ├── utils/               # Các hàm tiện ích
+│   │   └── DateFormatter.ts
+│   ├── App.tsx              # Entry point của ứng dụng
+│   ├── index.tsx            # File entry point chính
+│   ├── index.css            # CSS chung cho ứng dụng
+│   └── reportWebVitals.ts   # Báo cáo hiệu suất ứng dụng
+│
+├── package.json             # Cấu hình gói và phụ thuộc
+├── tsconfig.json            # Cấu hình TypeScript
+├── package-lock.json        # Phiên bản các phụ thuộc
+└── README.md                # Tệp README
+
 ```
 
